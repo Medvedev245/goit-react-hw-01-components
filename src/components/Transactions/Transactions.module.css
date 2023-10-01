@@ -1,7 +1,6 @@
 .transactionHistory {
   width: 800px;
   background-color: rgb(185, 164, 197);
-  /* убрать */
 }
 
 .head {
@@ -20,6 +19,6 @@
   font-size: 20px;
 }
 
-.row:nth-child(2n) {
+.row:nth-of-type(2n) {
   background-color: rgb(161, 161, 236);
 }

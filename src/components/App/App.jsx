@@ -1,20 +1,18 @@
 import styles from './App.module.css';
-import { User } from '../User/User';
-import { Statistics } from '../Statistics/Statistics';
-import { FriendList } from '../Friends/Friends';
-import { TransactionHistory } from '../Transactions/TransactionHistory';
-import userData from '../../user.json';
-import data from '../../data.json';
-import friends from '../../friends.json';
-import transactions from '../../transactions.json';
+import { User } from 'components/User/User';
+import { Statistics } from 'components/Statistics/Statistics';
+import { FriendList } from 'components/Friends/Friends';
+import { TransactionHistory } from 'components/Transactions/TransactionHistory';
+import userData from 'jsons/user.json';
+import data from 'jsons/data.json';
+import friends from 'jsons/friends.json';
+import transactions from 'jsons/transactions.json';
 
-export const App = () => {
-  return (
-    <div className={styles.container}>
-      <User el={userData} />
-      <Statistics stats={data} />
-      <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />;
-    </div>
-  );
-};
+export const App = () => (
+  <div className={styles.container}>
+    <User el={userData} />
+    <Statistics stats={data} />
+    <FriendList friends={friends} />
+    <TransactionHistory items={transactions} />;
+  </div>
+);

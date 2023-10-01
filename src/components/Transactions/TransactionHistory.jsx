@@ -1,12 +1,6 @@
 import styles from './Transactions.module.css';
 
 export const TransactionHistory = ({ items }) => {
-  console.log(items);
-  console.log(items.length);
-  // for (let index = 0; index < array.length; index++) {
-  //   const element = array[index];
-
-  // }
   return (
     <table className={styles.transactionHistory}>
       <thead className={styles.head}>

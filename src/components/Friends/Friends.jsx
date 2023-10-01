@@ -9,7 +9,7 @@ export const FriendList = ({ friends }) => {
           <span
             className={clsx(
               styles.status,
-              isOnline === true && styles.true,
+              isOnline && styles.true,
               isOnline === false && styles.false
             )}
           ></span>
