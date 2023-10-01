@@ -1,0 +1,25 @@
+.transactionHistory {
+  width: 800px;
+  background-color: rgb(185, 164, 197);
+  /* убрать */
+}
+
+.head {
+  background-color: #2f58af;
+  color: azure;
+  height: 60px;
+}
+
+.table {
+  background: #c8e1e2;
+}
+
+.el {
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.row:nth-child(2n) {
+  background-color: rgb(161, 161, 236);
+}
