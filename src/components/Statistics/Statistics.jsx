@@ -1,9 +1,9 @@
 import styles from './Statistics.module.css';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <section className={styles.statistics}>
-      {'title' && <h2 className={styles.title}>{'Upload stats'}</h2>}
+      {title && <h2 className={styles.title}>Upload stats</h2>}
       <ul className={styles.statList}>
         {stats.map(({ id, label, percentage }) => (
           <li

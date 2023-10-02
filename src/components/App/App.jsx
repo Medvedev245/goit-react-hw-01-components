@@ -11,7 +11,7 @@ import transactions from 'jsons/transactions.json';
 export const App = () => (
   <div className={styles.container}>
     <User el={userData} />
-    <Statistics stats={data} />
+    <Statistics title="Upload stats" stats={data} />
     <FriendList friends={friends} />
     <TransactionHistory items={transactions} />;
   </div>
